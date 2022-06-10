@@ -14,11 +14,11 @@ export class UserRecord implements RecordUserType {
     password: string
 
     constructor(obj: UserRegisterType) {
-        if(obj.email.length > 50){
-            throw new ValidationError(`Email length should be no more than 50.`)
+        if(obj.email.length > 50 || obj.email.length <= 4){
+            throw new ValidationError(`Email length should be no more than 50 and at least 5.`)
         }
-        if(obj.password.length > 50 ){
-            throw new ValidationError(`Your password should be no more than 50 letters.`)
+        if(obj.password.length > 50 ||  obj.password.length <= 4){
+            throw new ValidationError(`Password length should be no more than 50 and at least 5.`)
         }
         this.id = obj.id;
         this.email = obj.email;
@@ -31,8 +31,6 @@ export class UserRecord implements RecordUserType {
         const [results] = await pool.execute("SELECT * FROM `users` WHERE `email` = :email", {
             email,
         }) as userResults
-
-        console.log(password,results[0].password)
 
         if(results.length > 0){
               const match = await bcrypt.compare(password,results[0].password);
