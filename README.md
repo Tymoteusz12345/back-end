@@ -4,11 +4,11 @@ Hello, this is backend repo for spaceX launches viewer!
 
 ### Before running the app make sure you have all files, run npm install to intall all nessesary files.
 
-### Make sure you have backend and frontend repositories in one folder, to make "types" folder working.
+### Make sure you have backend and frontend repositories in one folder, to make `types` folder working.
 
 ### Make sure Cors policy will match launched front-end app.
 
-### to run this open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### to run app, run `npm start` open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 ______________________________________________________________________________
 
 ## Available Scripts
