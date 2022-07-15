@@ -8,6 +8,8 @@ Hello, this is backend repo for spaceX launches viewer!
 
 ### Make sure Cors policy will match launched front-end app.
 
+### make sure to create and install database file named ``
+
 ### to run app, run `npm start` open [http://localhost:3003](http://localhost:3003) to view it in your browser.
 ______________________________________________________________________________
 
