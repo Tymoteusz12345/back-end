@@ -8,7 +8,7 @@ Hello, this is backend repo for spaceX launches viewer!
 
 ### Make sure Cors policy will match launched front-end app.
 
-### to run app, run `npm start` open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### to run app, run `npm start` open [http://localhost:3003](http://localhost:3003) to view it in your browser.
 ______________________________________________________________________________
 
 ## Available Scripts
@@ -18,7 +18,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3003) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
